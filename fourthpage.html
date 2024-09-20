@@ -3,6 +3,15 @@
 <head>
   <!-- [Q1. Rebekah Lingen 9/14/24] -->
   <title>Fourth Page</title>
+  <style>
+    .label{
+        font-size: 1.2rem;
+    }
+    .form {
+        background-color: rgb(178, 219, 187);
+        padding: .4rem;
+    }
+  </style>
 </head>
 <body>
   <!-- [Q3. Create a navigation bar that links to two other pages] -->
@@ -12,7 +21,34 @@
     <a href="thirdpage.html"><span class="navitem">Page 3</span></a>
     <a href="fourthpage.html"><span class="navitem">Page 4</span></a>
 </div>
+<br>
 
+<h2>Want more information about the class? <br> Fill out the form below!</h2> <br>
+<form class="form" action="./index.html" method="get">
+    <label class="label" for="Flname">Insert your first and last name here:</label>
+        <input type="text" id="Flname" name="First and Last Name">
+    <br>
+    <label class="label" for="email">What is your email?</label>
+        <input type="email" id="email" name="email">
+    <br>
+    <label class="label" for="color">What is your favorite color? (for reasearch purposes...)</label>
+        <input type="color" id="color" name="color">
+    <br>
+    <label class="label" for="contact">Would you like us to contact you with more information?</label>
+       <br>
+        <label>
+            <input type="radio" name="contact" value="yes">
+            Yes please! I can't wait to take this class!  
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="contact" value="no">
+            No, please don't ever mention this class in my presence. 
+        </label>
+    <br>
+    <label for="submit">Click here to submit and be redirected back to the index page.</label>
+        <input type="submit" value="Submit">
+</form>
  
 
 </body>
